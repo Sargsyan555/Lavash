@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background-image: url("images/Group\ 1.png");
+    background-size: cover;
+    background-position: center;
+    background-position: 0% 20%; /* Adjust background position if necessary */
+    height: 260px;
+}
+
+header .content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8%;
+}
+
+header .content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 24px;
+    text-align: center;
+    color: #6C7275;
+    order: 0;
+    flex-grow: 0;
+}
+/* Menu */
+.menu{
+
+background: #EFEFEF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.menu .header {
+    text-align: center;
+    padding: 50px 0;
+}
+.menu .header h2 {
+    font-family: 'Rock Salt', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 24px;
+    color: #1E1E1E;
+    
+}
+.menu .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.menu .content .block{
+    text-align: center;
+    align-items: center;
+    width: calc(40% - 10px);
+    margin: 80px 0px; 
+    border-radius: 20px 5px;
+    background: #EFEFEF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 5px solid #FFFFFF;
+    position: relative;
+}
+.menu .content .block :hover{
+    /* background-color: white; */
+}
+
+.menu .content .block img{
+    position: absolute;
+    top: -150px; /* Adjust this value to determine how much of the image appears outside of the block */
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%); /* Horizontally center the image */
+    width: 90%;
+    height: auto;
+    padding: 50px;
+}
+.block::before {
+    content: ""; 
+    display: block;
+    padding-top: 80%; /* This will make the block height match the width (aspect ratio) */
+}
+.menu .content .block h2{
+    /* Dessert */
+
+
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 23px;
+
+color: #1E1E1E;
+padding-bottom: 50px;
+
+
+}
+footer{
+    background-color: #FF9A00;
+    padding: 30px 0;
+}
+footer a{
+text-decoration: none;
+width: 80px;
+color: #FF9A00;
+background-color: white;
+}
+footer ul{
+    list-style: none;
+}
+footer h2{
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+color: #FFFFFF;
+
+
+}
+footer ul li{
+
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color: #FFFFFF;
+margin: 15px 0;
+cursor: pointer;
+}
+.social-icons{
+    display: flex;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.icon i {
+    color: #FF9A00;
+
+}
+.facebook{
+    margin: 0 15px;
+}
